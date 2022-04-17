@@ -1,7 +1,16 @@
 package main;
-public class Main {
- public static void main(String[] args) {
+
+import util.Menu;
+import util.MenuUtil;
+
+public class Main 
+{
+ public static void main(String[] args)
+    {
+        Menu m=MenuUtil.showMenu();
+        MenuUtil.processMenu(m);
+        
+        
         
     }
-    
 }

@@ -1,6 +1,7 @@
 package bean;
 public abstract class Person
 {
+    private int Id;
     private String name;
     private String surname;
     private int age;
@@ -9,7 +10,8 @@ public abstract class Person
     public Person() {
     }
 
-    public Person(String name, String surname, int age, String SchoolName) {
+    public Person(int Id,String name, String surname, int age, String SchoolName) {
+        this.Id=Id;
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -47,5 +49,12 @@ public abstract class Person
     public void setSchoolName(String SchoolName) {
         this.SchoolName = SchoolName;
     }
-    
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int Id) {
+        this.Id = Id;
+    }
 }

@@ -2,16 +2,36 @@ package util;
 import java.util.Scanner;
 public class MenuUtil 
 {
-    public static Menu showMenu()
+    public static void showMenu()
     {
-        Menu.ShowAllMenu();
-            System.out.println("Please select menu:");
-            Scanner sc=new Scanner(System.in);
-            int selectedMenu=sc.nextInt();
-            return Menu.find(selectedMenu);
+            Menu.ShowNextMenu();
+            selectedMenu();
     }
-    public static void processMenu(Menu menu)
+    public static void showStartMenu()
     {
-        menu.process();
+         Menu.ShowStartMenu();
+         selectedStartMenu();
+    }
+    public static void selectedStartMenu()
+    {
+        Scanner sc=new Scanner(System.in);
+            int selectedMenuNumber=sc.nextInt();
+        while(!(selectedMenuNumber==1||selectedMenuNumber==2))
+            {
+                selectedMenuNumber=Involvement.toIncludeInt("Please make one of the options in the menu :");
+            }
+           Menu m =  Menu.find(selectedMenuNumber);
+           m.process();
+    }
+    public static void selectedMenu()
+    {
+        Scanner sc=new Scanner(System.in);
+            int selectedMenuNumber=sc.nextInt();
+             while(selectedMenuNumber==1||selectedMenuNumber==2)
+             {
+                 selectedMenuNumber=Involvement.toIncludeInt("Please make one of the options in the menu :");
+             }
+             Menu m =  Menu.find(selectedMenuNumber);
+             m.process();
     }
 }

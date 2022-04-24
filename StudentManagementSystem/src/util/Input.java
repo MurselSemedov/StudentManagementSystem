@@ -1,6 +1,6 @@
 package util;
 import java.util.Scanner;
-public class Involvement {
+public class Input {
     public static String toIncludeString(String data)
     {
         Scanner sc=new Scanner(System.in);

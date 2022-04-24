@@ -1,23 +1,23 @@
 package services.menu;
 import bean.Config;
-import bean.Inspection;
+import bean.Verifications;
 import bean.Student;
 import services.menu.inter.MenuAddStudentsServiceInter;
-import util.Involvement;
+import util.Input;
 public class MenuAddStudentService implements MenuAddStudentsServiceInter {
     @Override
     public void process() {
-        int id=Involvement.toIncludeInt("Student Number :");
-        while(Inspection.S_id.contains(id))
+        int id=Input.toIncludeInt("Student Number :");
+        while(Verifications.instance().getS_id().contains(id))
         {
-             id=Involvement.toIncludeInt("This id is available. Enter another id :");
+             id=Input.toIncludeInt("This id is available. Enter another id :");
         }
-        String name=Involvement.toIncludeString("Name :");
-        String surname=Involvement.toIncludeString("Surname :");
-        int age=Involvement.toIncludeInt("Age :");
-        String schoolname=Involvement.toIncludeString("SchoolName :");
-        Double scholarship=Involvement.toIncludeDouble("Scholarship :");
-        Inspection.S_id.add(id);
+        String name=Input.toIncludeString("Name :");
+        String surname=Input.toIncludeString("Surname :");
+        int age=Input.toIncludeInt("Age :");
+        String schoolname=Input.toIncludeString("SchoolName :");
+        Double scholarship=Input.toIncludeDouble("Scholarship :");
+        Verifications.instance().setS_id(id);
         Config.instance().setStudents(new Student(id,name,surname,age,schoolname,scholarship));
     }
 }

@@ -42,7 +42,7 @@ public enum Menu
     public  void process()
     {
         service.process();
-        MenuUtil.showMenu();
+        MenuUtil.showNextMenu();
     }
     public static Menu find(int number)
     {

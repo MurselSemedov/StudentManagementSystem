@@ -20,23 +20,19 @@ public class Verifications {
     public  String EmailVertification()
     {
         String EnterEmail=Input.toIncludeString("E-mail:");
-        while(!((EnterEmail.contains("@gmail.com")||EnterEmail.contains("@mail.ru")||EnterEmail.contains("@bk.ru")||EnterEmail.contains("@list.ru"))))
+        loop1:while(!((EnterEmail.contains("@gmail.com")||EnterEmail.contains("@mail.ru")||EnterEmail.contains("@bk.ru")||EnterEmail.contains("@list.ru"))))
         {
             EnterEmail=Input.toIncludeString("There is no such mail form. Please enter the correct mail:");
-        }
-        while(Verifications.instance().getEmail().contains(EnterEmail))
-        {
-            EnterEmail=Input.toIncludeString("This email is available. Enter another email:");
+            if(Verifications.instance().getEmail().contains(EnterEmail))
+            {
+            EnterEmail=Input.toIncludeString("This email is available. Enter another email:");    
+            } 
         }
         return EnterEmail;
     }
     public  String PasswordVertification()
     {
         String EnterPassword=Input.toIncludeString("Password:");
-        while(Verifications.instance().getPassword().contains(EnterPassword))
-        {
-            EnterPassword=Input.toIncludeString("This password is available. Enter another password:");
-        }
         while((EnterPassword.length()<8)||
                ! (
                 EnterPassword.contains("1")||EnterPassword.contains("2")||EnterPassword.contains("3")||EnterPassword.contains("4")
@@ -44,7 +40,11 @@ public class Verifications {
                 ||EnterPassword.contains("9")||EnterPassword.contains("0")
                 ))
         {
+            EnterPassword=Input.toIncludeString("This password is available. Enter another password:");
+            if(Verifications.instance().getPassword().contains(EnterPassword))
+            {
             EnterPassword=Input.toIncludeString("The password must be at least 8 characters and 1 digit, please enter the correct password:");
+            }
         }
         return EnterPassword;
     }

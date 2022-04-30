@@ -26,7 +26,7 @@ public class MenuUtil
            m.process();
             }catch(InputMismatchException ex)
             {
-                System.out.println("You made a wrong choice. You were redirected to the menu.");
+                System.out.println("You made the wrong choice. Try again.");
                 showStartMenu();
             }
     }
@@ -42,7 +42,7 @@ public class MenuUtil
              Menu m =  Menu.find(selectedMenuNumber);
              m.process();
         }catch(InputMismatchException ex){
-                System.out.println("You made a wrong choice. You were redirected to the menu.");
+                System.out.println("You made the wrong choice. Try again.");
                 showNextMenu();
             }
     }

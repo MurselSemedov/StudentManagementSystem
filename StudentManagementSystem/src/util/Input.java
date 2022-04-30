@@ -19,4 +19,6 @@ public class Input {
         System.out.print(data);
         return sc.nextDouble(); 
     }
+    private Input() {
+    }
 }

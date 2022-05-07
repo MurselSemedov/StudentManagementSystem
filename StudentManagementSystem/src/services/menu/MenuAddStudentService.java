@@ -3,6 +3,7 @@ import bean.Config;
 import bean.Verifications;
 import bean.Student;
 import services.menu.inter.MenuAddStudentsServiceInter;
+import util.FileUtility;
 import util.Input;
 public class MenuAddStudentService implements MenuAddStudentsServiceInter {
     @Override
@@ -19,5 +20,7 @@ public class MenuAddStudentService implements MenuAddStudentsServiceInter {
         Double scholarship=Input.toIncludeDouble("Scholarship :");
         Verifications.instance().setS_id(id);
         Config.instance().setStudents(new Student(id,name,surname,age,schoolname,scholarship));
+        FileUtility.writeObjectToFile(Config.instance(),"C:\\Users\\99470\\Desktop\\StudentManagement\\proj.obj" );
+        FileUtility.writeObjectToFile(Verifications.instance(),"C:\\Users\\99470\\Desktop\\StudentManagement\\verify.obj" );
     }
 }

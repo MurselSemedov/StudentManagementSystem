@@ -3,6 +3,7 @@ import bean.Config;
 import bean.Verifications;
 import bean.Teacher;
 import services.menu.inter.MenuAddTeacherServiceInter;
+import util.FileUtility;
 import util.Input;
 public class MenuAddTeacherService implements MenuAddTeacherServiceInter {
     @Override
@@ -19,5 +20,6 @@ public class MenuAddTeacherService implements MenuAddTeacherServiceInter {
         Double salary=Input.toIncludeDouble("Salary :");
         Verifications.instance().setT_id(id);
         Config.instance().setTeachers(new Teacher(id,name,surname,age,schoolname,salary));
+        FileUtility.writeObjectToFile(Config.instance(), "C:\\Users\\99470\\Desktop\\StudentManagement\\proj.obj");
     }
 }

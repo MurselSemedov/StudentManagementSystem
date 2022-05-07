@@ -1,9 +1,22 @@
 package bean;
+import java.io.Serializable;
 import java.util.LinkedList;
-public class Config {
+import util.FileUtility;
+public class Config implements Serializable {
     LinkedList<Student> students=new LinkedList<>();
     LinkedList<Teacher> teachers=new LinkedList<>();
-    
+    public static void initialize()
+    {
+        Object obj=FileUtility.readObjectToFile("C:\\Users\\99470\\Desktop\\StudentManagement\\proj.obj");
+        if(obj==null)
+        {
+            return;
+        }
+        if(obj instanceof Config)
+        {
+            config=(Config)obj;
+        }
+    }
     public static Config config=null;
     public Student[] getStudents() {
         Student[] s=new Student[this.students.size()];

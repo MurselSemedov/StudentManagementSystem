@@ -1,5 +1,6 @@
 package bean;
-public abstract class Person
+import java.io.Serializable;
+public abstract class Person implements Serializable
 {
     private int Id;
     private String name;

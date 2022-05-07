@@ -1,4 +1,5 @@
 package services.menu;
+import bean.Config;
 import bean.Verifications;
 import services.menu.inter.MenuLoginServiceInter;
 import util.Input;
@@ -20,6 +21,7 @@ public class MenuLoginService implements MenuLoginServiceInter {
         {
             System.out.println("Login Successed...");
             System.out.println("Please select menu :");
+            Config.initialize();
             Menu.ShowNextMenu();
             selectedMenu();
         }

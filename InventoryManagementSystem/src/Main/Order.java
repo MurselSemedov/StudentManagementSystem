@@ -39,9 +39,9 @@ public Order() {
         jScrollPane1 = new javax.swing.JScrollPane();
         products = new javax.swing.JTable();
         jLabel8 = new javax.swing.JLabel();
-        UpdateBtn = new javax.swing.JButton();
-        AddToBtn = new javax.swing.JButton();
         HomeBtn = new javax.swing.JButton();
+        AddToBtn = new javax.swing.JButton();
+        ViewBtn = new javax.swing.JButton();
         AddBtn = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         Customers = new javax.swing.JTable();
@@ -178,13 +178,13 @@ public Order() {
         jLabel8.setForeground(new java.awt.Color(0, 51, 255));
         jLabel8.setText("Customers List");
 
-        UpdateBtn.setBackground(new java.awt.Color(0, 51, 255));
-        UpdateBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
-        UpdateBtn.setForeground(new java.awt.Color(255, 255, 255));
-        UpdateBtn.setText("Home");
-        UpdateBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        HomeBtn.setBackground(new java.awt.Color(0, 51, 255));
+        HomeBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
+        HomeBtn.setForeground(new java.awt.Color(255, 255, 255));
+        HomeBtn.setText("Home");
+        HomeBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                UpdateBtnMouseClicked(evt);
+                HomeBtnMouseClicked(evt);
             }
         });
 
@@ -203,13 +203,13 @@ public Order() {
             }
         });
 
-        HomeBtn.setBackground(new java.awt.Color(0, 51, 255));
-        HomeBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
-        HomeBtn.setForeground(new java.awt.Color(255, 255, 255));
-        HomeBtn.setText("View Orders");
-        HomeBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+        ViewBtn.setBackground(new java.awt.Color(0, 51, 255));
+        ViewBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
+        ViewBtn.setForeground(new java.awt.Color(255, 255, 255));
+        ViewBtn.setText("View Orders");
+        ViewBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                HomeBtnMouseClicked(evt);
+                ViewBtnMouseClicked(evt);
             }
         });
 
@@ -328,7 +328,7 @@ public Order() {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 598, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(126, 126, 126)
-                        .addComponent(UpdateBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(HomeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 619, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -347,7 +347,7 @@ public Order() {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(Date, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(HomeBtn)
+                                        .addComponent(ViewBtn)
                                         .addGap(0, 18, Short.MAX_VALUE)))))
                         .addGap(733, 733, 733))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -420,9 +420,9 @@ public Order() {
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(AddBtn)
-                            .addComponent(HomeBtn))
+                            .addComponent(ViewBtn))
                         .addGap(18, 18, 18)
-                        .addComponent(UpdateBtn)
+                        .addComponent(HomeBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
@@ -523,28 +523,10 @@ private void Update()
                 e.printStackTrace();
             }
 }
-    private void UpdateBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UpdateBtnMouseClicked
-      /*  if(ProdId.getText().isEmpty()||ProdName.getText().isEmpty()||ProdQty.getText().isEmpty()||ProdDesc.getText().isEmpty())
-        {
-            JOptionPane.showMessageDialog(this, "Missing Information");
-        }else{
-            try{
-                con=DriverManager.getConnection("jdbc:mysql://localhost:3306/inventorydb","root","0708832206mM");
-                String UpdateQuery=
-                "update products set ProdName='"+ProdName.getText()+"'"+
-                ",ProdQty='"+ProdQty.getText()+"'"+",ProdDesc='"+ProdDesc.getText()+
-                "'"+",ProdCat='"+ProdCat.getSelectedItem().toString()+"'"+"where ProdId="+ProdId.getText();
-                Statement Add=con.createStatement();
-                Add.executeUpdate(UpdateQuery);
-                JOptionPane.showMessageDialog(this, "Products Succesfully Updated");
-                selectProd();
-                con.close();
-            }catch(Exception e)
-            {
-                e.printStackTrace();
-            }
-        }*/
-    }//GEN-LAST:event_UpdateBtnMouseClicked
+    private void HomeBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeBtnMouseClicked
+        new Menu().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_HomeBtnMouseClicked
 
 int i=1,ordqty,tot,total=0,Uprice;
     private void AddToBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddToBtnMouseClicked
@@ -570,10 +552,9 @@ int i=1,ordqty,tot,total=0,Uprice;
     } 
     }//GEN-LAST:event_AddToBtnMouseClicked
 
-    private void HomeBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeBtnMouseClicked
-        new Menu().setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_HomeBtnMouseClicked
+    private void ViewBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViewBtnMouseClicked
+        
+    }//GEN-LAST:event_ViewBtnMouseClicked
 
     private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBtnMouseClicked
       if(AmoTot.getText().equals("Amount"))
@@ -678,7 +659,7 @@ int i=1,ordqty,tot,total=0,Uprice;
     private javax.swing.JTextField OrderId;
     private javax.swing.JTextField Price;
     private javax.swing.JTextField Qty;
-    private javax.swing.JButton UpdateBtn;
+    private javax.swing.JButton ViewBtn;
     private javax.swing.JLabel XBtn;
     private javax.swing.JLabel custname;
     private javax.swing.JLabel jLabel1;

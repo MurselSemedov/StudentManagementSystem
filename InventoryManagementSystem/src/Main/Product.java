@@ -13,6 +13,7 @@ public class Product extends javax.swing.JFrame {
     public Product() {
         initComponents();
         selectProd();
+        GetCat();
     }
 
     /**
@@ -165,7 +166,6 @@ public class Product extends javax.swing.JFrame {
 
         ProdCat.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         ProdCat.setForeground(new java.awt.Color(0, 51, 255));
-        ProdCat.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         ProdCat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ProdCatActionPerformed(evt);
@@ -370,6 +370,21 @@ public void selectProd()
         e.printStackTrace();
     }
 }
+private void GetCat()
+{ 
+    try{
+        con=DriverManager.getConnection("jdbc:mysql://localhost:3306/inventorydb","root","0708832206mM");
+        stm=con.createStatement();
+        rs=stm.executeQuery("select * from categories");
+        while(rs.next())
+        {
+            String myCat=rs.getString("CatName");
+            ProdCat.addItem(myCat);
+        }
+    }catch(Exception e){
+        e.printStackTrace();
+    }
+}
     private void AddBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddBtnMouseClicked
       try {
           con=DriverManager.getConnection("jdbc:mysql://localhost:3306/inventorydb","root","0708832206mM");
@@ -414,7 +429,7 @@ public void selectProd()
     }//GEN-LAST:event_DeleteBtnMouseClicked
 
     private void HomeBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeBtnMouseClicked
-            new Login().setVisible(true);
+            new Menu().setVisible(true);
             this.dispose();
     }//GEN-LAST:event_HomeBtnMouseClicked
 

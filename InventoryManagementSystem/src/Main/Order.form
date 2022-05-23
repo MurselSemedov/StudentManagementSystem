@@ -46,8 +46,138 @@
         </Property>
       </Properties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="110" pref="110" max="-2" attributes="0"/>
+                  <Component id="jLabel8" min="-2" pref="168" max="-2" attributes="0"/>
+                  <EmptySpace min="422" pref="422" max="-2" attributes="0"/>
+                  <Component id="jLabel9" min="-2" pref="149" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                  <Component id="jScrollPane2" min="-2" pref="380" max="-2" attributes="0"/>
+                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="690" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                  <Component id="jLabel6" min="-2" pref="125" max="-2" attributes="0"/>
+                  <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
+                  <Component id="OrderId" min="-2" pref="183" max="-2" attributes="0"/>
+                  <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
+                  <Component id="jLabel4" min="-2" pref="73" max="-2" attributes="0"/>
+                  <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
+                  <Component id="Price" min="-2" pref="155" max="-2" attributes="0"/>
+                  <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                  <Component id="jLabel7" min="-2" pref="100" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="Qty" min="-2" pref="155" max="-2" attributes="0"/>
+                  <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                  <Component id="AddToBtn" min="-2" pref="150" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" pref="173" max="-2" attributes="0"/>
+                          <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                          <Component id="custname" min="-2" pref="183" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="jLabel3" min="-2" pref="125" max="-2" attributes="0"/>
+                          <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
+                          <Component id="Date" min="-2" pref="183" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="AddBtn" min="-2" pref="130" max="-2" attributes="0"/>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="HomeBtn" min="-2" pref="110" max="-2" attributes="0"/>
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Component id="ViewBtn" min="-2" pref="140" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane5" min="-2" pref="480" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                  <Component id="jScrollPane3" min="-2" pref="610" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" attributes="0">
+                  <EmptySpace min="680" pref="680" max="-2" attributes="0"/>
+                  <Component id="AmoTot" min="-2" pref="70" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="AmoTot1" min="-2" pref="50" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                  <Component id="AddToBtn1" min="-2" pref="90" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Component id="jPanel2" min="-2" pref="110" max="-2" attributes="0"/>
+                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane2" min="-2" pref="180" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="180" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel4" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="Price" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="jLabel7" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="Qty" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="AddToBtn" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <Component id="OrderId" min="-2" pref="29" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="1" pref="1" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                              <Component id="custname" min="-2" pref="31" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <Component id="Date" min="-2" pref="31" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="AddBtn" min="-2" max="-2" attributes="0"/>
+                              <Component id="HomeBtn" min="-2" max="-2" attributes="0"/>
+                              <Component id="ViewBtn" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="9" pref="9" max="-2" attributes="0"/>
+                          <Component id="jScrollPane5" min="-2" pref="200" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane3" min="-2" pref="334" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="AmoTot" min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="AmoTot1" min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="AddToBtn1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
         <Container class="javax.swing.JPanel" name="jPanel2">
@@ -56,11 +186,6 @@
               <Color blue="ff" green="33" red="0" type="rgb"/>
             </Property>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="0" width="-1" height="110"/>
-            </Constraint>
-          </Constraints>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -149,11 +274,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Date"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="20" y="450" width="125" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
@@ -165,11 +285,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Price"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="430" y="360" width="73" height="31"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
@@ -181,11 +296,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="CustomerName"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="20" y="410" width="173" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
@@ -197,11 +307,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="OrderId"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="20" y="370" width="125" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="Price">
           <Properties>
@@ -215,21 +320,11 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PriceActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="510" y="360" width="155" height="29"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="420" y="170" width="690" height="180"/>
-            </Constraint>
-          </Constraints>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
@@ -277,11 +372,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Customers List"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="110" y="140" width="168" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="HomeBtn">
           <Properties>
@@ -299,11 +389,6 @@
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="HomeBtnMouseClicked"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="160" y="490" width="110" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="AddToBtn">
           <Properties>
@@ -322,11 +407,6 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AddToBtnMouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddToBtnActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="930" y="360" width="150" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="ViewBtn">
           <Properties>
@@ -344,11 +424,6 @@
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="ViewBtnMouseClicked"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="270" y="490" width="140" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="AddBtn">
           <Properties>
@@ -367,21 +442,11 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AddBtnMouseClicked"/>
             <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AddBtnMouseEntered"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="30" y="490" width="130" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane2">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="20" y="170" width="380" height="180"/>
-            </Constraint>
-          </Constraints>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
@@ -421,11 +486,6 @@
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="510" y="400" width="610" height="334"/>
-            </Constraint>
-          </Constraints>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
@@ -502,11 +562,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Products List"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="700" y="140" width="149" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="Date">
           <Properties>
@@ -518,11 +573,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Date"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="210" y="450" width="183" height="31"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="custname">
           <Properties>
@@ -534,11 +584,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="CustName"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="210" y="410" width="183" height="31"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="AmoTot">
           <Properties>
@@ -550,11 +595,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Amount"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="680" y="740" width="70" height="30"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JTextField" name="Qty">
           <Properties>
@@ -568,11 +608,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="QtyActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="770" y="360" width="155" height="29"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
@@ -584,11 +619,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Quantity"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="670" y="360" width="100" height="31"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="AmoTot1">
           <Properties>
@@ -600,11 +630,6 @@
             </Property>
             <Property name="text" type="java.lang.String" value="USD"/>
           </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="750" y="740" width="50" height="31"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="AddToBtn1">
           <Properties>
@@ -623,21 +648,11 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="AddToBtn1MouseClicked"/>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddToBtn1ActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="800" y="740" width="90" height="-1"/>
-            </Constraint>
-          </Constraints>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane5">
           <AuxValues>
             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
           </AuxValues>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="530" width="480" height="200"/>
-            </Constraint>
-          </Constraints>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
           <SubComponents>
@@ -716,11 +731,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="OrderIdActionPerformed"/>
           </Events>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="210" y="370" width="183" height="29"/>
-            </Constraint>
-          </Constraints>
         </Component>
       </SubComponents>
     </Container>

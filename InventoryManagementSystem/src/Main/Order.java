@@ -63,7 +63,6 @@ public Order() {
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(0, 51, 255));
 
@@ -113,27 +112,21 @@ public Order() {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 110));
-
         jLabel3.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 51, 255));
         jLabel3.setText("Date");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 125, -1));
 
         jLabel4.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 51, 255));
         jLabel4.setText("Price");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, 73, 31));
 
         jLabel5.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 255));
         jLabel5.setText("CustomerName");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 173, -1));
 
         jLabel6.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 51, 255));
         jLabel6.setText("OrderId");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 125, -1));
 
         Price.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         Price.setForeground(new java.awt.Color(0, 51, 255));
@@ -142,7 +135,6 @@ public Order() {
                 PriceActionPerformed(evt);
             }
         });
-        jPanel1.add(Price, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 360, 155, 29));
 
         products.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         products.setForeground(new java.awt.Color(0, 51, 255));
@@ -164,12 +156,9 @@ public Order() {
         });
         jScrollPane1.setViewportView(products);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 690, 180));
-
         jLabel8.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 51, 255));
         jLabel8.setText("Customers List");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 168, -1));
 
         HomeBtn.setBackground(new java.awt.Color(0, 51, 255));
         HomeBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
@@ -180,7 +169,6 @@ public Order() {
                 HomeBtnMouseClicked(evt);
             }
         });
-        jPanel1.add(HomeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 490, 110, -1));
 
         AddToBtn.setBackground(new java.awt.Color(0, 51, 255));
         AddToBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
@@ -196,7 +184,6 @@ public Order() {
                 AddToBtnActionPerformed(evt);
             }
         });
-        jPanel1.add(AddToBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 360, 150, -1));
 
         ViewBtn.setBackground(new java.awt.Color(0, 51, 255));
         ViewBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
@@ -207,7 +194,6 @@ public Order() {
                 ViewBtnMouseClicked(evt);
             }
         });
-        jPanel1.add(ViewBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 490, 140, -1));
 
         AddBtn.setBackground(new java.awt.Color(0, 51, 255));
         AddBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
@@ -221,7 +207,6 @@ public Order() {
                 AddBtnMouseEntered(evt);
             }
         });
-        jPanel1.add(AddBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 490, 130, -1));
 
         Customers.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         Customers.setForeground(new java.awt.Color(0, 51, 255));
@@ -243,8 +228,6 @@ public Order() {
         });
         jScrollPane2.setViewportView(Customers);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 380, 180));
-
         Bill.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         Bill.setForeground(new java.awt.Color(0, 51, 255));
         Bill.setModel(new javax.swing.table.DefaultTableModel(
@@ -265,27 +248,21 @@ public Order() {
         });
         jScrollPane3.setViewportView(Bill);
 
-        jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 400, 610, 334));
-
         jLabel9.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 51, 255));
         jLabel9.setText("Products List");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 140, 149, -1));
 
         Date.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         Date.setForeground(new java.awt.Color(0, 51, 255));
         Date.setText("Date");
-        jPanel1.add(Date, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, 183, 31));
 
         custname.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         custname.setForeground(new java.awt.Color(0, 51, 255));
         custname.setText("CustName");
-        jPanel1.add(custname, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 183, 31));
 
         AmoTot.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         AmoTot.setForeground(new java.awt.Color(0, 51, 255));
         AmoTot.setText("Amount");
-        jPanel1.add(AmoTot, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 740, 70, 30));
 
         Qty.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         Qty.setForeground(new java.awt.Color(0, 51, 255));
@@ -294,17 +271,14 @@ public Order() {
                 QtyActionPerformed(evt);
             }
         });
-        jPanel1.add(Qty, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 360, 155, 29));
 
         jLabel7.setFont(new java.awt.Font("Imprint MT Shadow", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 51, 255));
         jLabel7.setText("Quantity");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 100, 31));
 
         AmoTot1.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         AmoTot1.setForeground(new java.awt.Color(0, 51, 255));
         AmoTot1.setText("USD");
-        jPanel1.add(AmoTot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 740, 50, 31));
 
         AddToBtn1.setBackground(new java.awt.Color(0, 51, 255));
         AddToBtn1.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
@@ -320,7 +294,6 @@ public Order() {
                 AddToBtn1ActionPerformed(evt);
             }
         });
-        jPanel1.add(AddToBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 740, 90, -1));
 
         Orders.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         Orders.setForeground(new java.awt.Color(0, 51, 255));
@@ -342,8 +315,6 @@ public Order() {
         });
         jScrollPane5.setViewportView(Orders);
 
-        jPanel1.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 480, 200));
-
         OrderId.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
         OrderId.setForeground(new java.awt.Color(0, 51, 255));
         OrderId.addActionListener(new java.awt.event.ActionListener() {
@@ -351,7 +322,117 @@ public Order() {
                 OrderIdActionPerformed(evt);
             }
         });
-        jPanel1.add(OrderId, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 183, 29));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(422, 422, 422)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 380, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 690, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(OrderId, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(7, 7, 7)
+                .addComponent(Price, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(Qty, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addComponent(AddToBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(17, 17, 17)
+                        .addComponent(custname, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65)
+                        .addComponent(Date, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(AddBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(HomeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(ViewBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(680, 680, 680)
+                .addComponent(AmoTot, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(AmoTot1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(AddToBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel9))
+                .addGap(1, 1, 1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Price, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Qty, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddToBtn)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(OrderId, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(1, 1, 1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addComponent(custname, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(9, 9, 9)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(Date, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(9, 9, 9)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AddBtn)
+                            .addComponent(HomeBtn)
+                            .addComponent(ViewBtn))
+                        .addGap(9, 9, 9)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(AmoTot, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AmoTot1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AddToBtn1)))
+        );
 
         jPanel3.setBackground(new java.awt.Color(0, 51, 255));
 

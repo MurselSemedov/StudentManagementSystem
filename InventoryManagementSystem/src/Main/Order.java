@@ -180,7 +180,7 @@ public Order() {
                 HomeBtnMouseClicked(evt);
             }
         });
-        jPanel1.add(HomeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 490, 90, -1));
+        jPanel1.add(HomeBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 490, 110, -1));
 
         AddToBtn.setBackground(new java.awt.Color(0, 51, 255));
         AddToBtn.setFont(new java.awt.Font("Imprint MT Shadow", 1, 18)); // NOI18N
